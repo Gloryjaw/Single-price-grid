@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+  /* l = light,g= grayish,b = bright */
+  --cyan:hsl(179, 62%, 43%);
+  --b-yellow:hsl(71, 73%, 54%);
+  --l-gray:hsl(204, 43%, 93%);
+  --g-blue:hsl(218, 22%, 67%);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  color: white;
+}
+html,body{
+  height: 100%;
+}
+li{
+  list-style: none;
+  color: var(--l-gray);
+  font-size: 0.8rem;
+  margin-bottom: 0.27em;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--l-gray);
+}
+main{
+  width: 85%;
+  max-width: 360px;
+}
+h3{
+  color: var(--cyan);
+}
+
+.top-heading-second{
+  color: var(--b-yellow);
+}
+
+p{
+  color: var(--g-blue);
+  font-size: 0.9rem;
+  line-height: 24px;
+}
+.top-section{
+  background-color: white;
+  padding: 1.7em 1.2em;
+  border-radius: 5px 5px 0 0;
+}
+
+.top-heading-first,.top-heading-second{
+  margin-bottom: 1em;
+}
+
+.bottom-section__left,.bottom-section__right{
+  padding: 1.3em 1.2em;
+}
+.bottom-section__left{
+  background-color: var(--cyan);
+}
+.bottom-section__right{
+  background-color:hsla(179, 62%, 43%, 0.873);
+  border-radius: 0 0 5px 5px;
+}
+
+.full-price{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.4em;
+}
+.price-num{
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+.per-month{
+  color: var(--b-gray);
+  align-self: center;
+}
+.full-access{
+  color: var(--l-gray);
+}
+.bottom-section__left>button{
+  border: none;
+  background-color: var(--b-yellow);
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 5px 10px 0 hsla(180, 5%, 33%, 0.39);
+}
+.bottom-section__left>h4{
+  margin-bottom: 1em;
+}.bottom-section__left>.full-access{
+  margin-bottom: 1.8em;
+}
+.bottom-section__right>h4{
+  margin-bottom: 1em;
+}
+@media(min-width:1000px){
+  main{
+    max-width: none;
+    width: 42.3%;
+    box-shadow: 0 7px 10px 2px hsla(216, 22%, 67%, 0.299);
+    border-radius: 10px;
+  }
+  .bottom-section{
+    display: flex;
+  }
+  .bottom-section__left,.bottom-section__right{
+    width: 50%;
+    padding:2em;
+    border-radius:0 ;
+  }
+  .top-section{
+    padding: 2.3em;
+  }
+  .top-section>p{
+    max-width: 500px;
+  }
+  .bottom-section__left{
+    border-radius: 0 0 0 5px;
+
+
+  }
+  .bottom-section__right{
+    border-radius: 0 0 5px 0;
+  }
+
+}
