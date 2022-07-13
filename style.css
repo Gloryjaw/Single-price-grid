@@ -34,8 +34,11 @@ main{
 }
 h1{
   color: var(--cyan);
+  font-size: 1.6rem;
 }
-
+h4{
+  font-size: 1.2rem;
+}
 .top-heading-second{
   color: var(--b-yellow);
 }
@@ -94,6 +97,7 @@ p{
   box-shadow: 0 5px 10px 0 hsla(180, 5%, 33%, 0.39);
 }
 .bottom-section__left>h4{
+
   margin-bottom: 1em;
 }.bottom-section__left>.full-access{
   margin-bottom: 1.8em;
@@ -121,6 +125,7 @@ p{
   }
   .top-section>p{
     max-width: 500px;
+    font-size: 1rem;
   }
   .bottom-section__left{
     border-radius: 0 0 0 5px;
